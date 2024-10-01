@@ -1,31 +1,31 @@
-let numeros = []
-let numeromayorque10 = false
+/* Realiza un programa que lea un numero N y muestre por la salida estandar todos los pares desde 2 hasta N
+(inclusive).
+Cada número se mostrará en una línea distinta.
+N siempre sera mayor o igual a 2. */
 
-for (let i = 0; i < 3; i++) {
+let numero = parseInt(prompt("Dame un numero y te devuelvo los pares: "))
+let respuesta = []
 
-    numeros.push(prompt("dame tres numeros"))
-}
+if (numero >= 2) {
 
+    for(i = 2; i <= numero; i = i + 2) {
 
+        respuesta.push(i)
 
-for (let i = 0; i < numeros.length; i++) {
-
-    if(numeros[i] > 10) {
-
-        numeromayorque10 = true
-
-        break
+        
 
     }
 
 }
 
-if(numeromayorque10 == true) {
-    alert("hay un numero mayor que 10")
+else {
+    alert("error el numero es menor que 2")
 }
 
-else {
-    alert("los numeros son menores que 10")
-}
+alert(respuesta)
+
+
+
+
 
 
