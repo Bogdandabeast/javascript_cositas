@@ -16,13 +16,15 @@ if (numero >= 2) {
 
     }
 
+    alert(respuesta)
+
 }
 
 else {
     alert("error el numero es menor que 2")
 }
 
-alert(respuesta)
+
 
 
 
